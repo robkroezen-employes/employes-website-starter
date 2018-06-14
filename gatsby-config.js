@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Employes website',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -33,5 +33,12 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
+    {
+     resolve: `gatsby-source-contentful`,
+     options: {
+       spaceId: `3dbql0j6vr6a`,
+       accessToken: `cf5c9cefffcd811bc14b5f4d2c27cbe06ae69f9aa6600bc87a078570bd021b41`,
+     },
+   },
   ],
 }
